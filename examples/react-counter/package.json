@@ -16,6 +16,8 @@
     "@automerge/automerge-repo-react-hooks": "^1.0.19",
     "@automerge/automerge-repo-storage-indexeddb": "^1.0.19",
     "@automerge/automerge-wasm": "^0.9.0",
+    "@openscript-ch/automerge-repo-storage-opfs": "workspace:*",
+    "@types/react": "^18.2.47",
     "@vitejs/plugin-react": "^4.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

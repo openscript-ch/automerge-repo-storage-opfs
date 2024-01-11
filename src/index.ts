@@ -3,16 +3,15 @@ import { Chunk, StorageAdapter, StorageKey } from '@automerge/automerge-repo';
 export class OPFSStorageAdapter extends StorageAdapter {
   private baseDirectory: string;
   private baseDirectoryHandle: FileSystemDirectoryHandle;
-  private root: FileSystemDirectoryHandle;
 
   constructor(baseDirectory: string = "automerge-repo-data") {
     super();
     this.baseDirectory = baseDirectory;
-    this.initialize();
   }
 
   async load(key: StorageKey): Promise<Uint8Array | undefined> {
     const fileName = getKey(key);
+    await this.initialize();
 
     try {
       const fileHandle = await this.baseDirectoryHandle.getFileHandle(fileName);
@@ -21,13 +20,14 @@ export class OPFSStorageAdapter extends StorageAdapter {
       return new Uint8Array(arrayBuffer);
     } catch (error) {
       // don't throw if file not found
-      if (error.code === "NotFoundError") return undefined
+      if (error.name === "NotFoundError") return undefined
       throw error;
     }
   }
 
   async save(key: StorageKey, data: Uint8Array): Promise<void> {
     const fileName = getKey(key);
+    await this.initialize();
 
     const fileHandle = await this.baseDirectoryHandle.getFileHandle(fileName, { create: true });
     const fileWritable = await fileHandle.createWritable();
@@ -37,12 +37,13 @@ export class OPFSStorageAdapter extends StorageAdapter {
 
   async remove(key: StorageKey): Promise<void> {
     const fileName = getKey(key);
+    await this.initialize();
 
     try {
       return this.baseDirectoryHandle.removeEntry(fileName);
     } catch (error) {
       // don't throw if file not found
-      if (error.code === "NotFoundError") return undefined
+      if (error.name === "NotFoundError") return undefined
       throw error;
     }
   }
@@ -50,6 +51,7 @@ export class OPFSStorageAdapter extends StorageAdapter {
   async loadRange(keyPrefix: StorageKey): Promise<Chunk[]> {
     const chunks: Chunk[] = [];
     const prefix = getKey(keyPrefix);
+    await this.initialize();
 
     for await (const [name] of this.baseDirectoryHandle) {
         if (name.startsWith(prefix)) {
@@ -65,6 +67,7 @@ export class OPFSStorageAdapter extends StorageAdapter {
 
   async removeRange(keyPrefix: StorageKey): Promise<void> {
     const prefix = getKey(keyPrefix);
+    await this.initialize();
 
     for await (const [name] of this.baseDirectoryHandle) {
         if (name.startsWith(prefix)) {
@@ -74,8 +77,10 @@ export class OPFSStorageAdapter extends StorageAdapter {
   }
 
   private async initialize() {
-    this.root = await navigator.storage.getDirectory();
-    this.baseDirectoryHandle = await this.root.getDirectoryHandle(this.baseDirectory, { create: true });
+    if(!this.baseDirectoryHandle) {
+      const root = await navigator.storage.getDirectory();
+      this.baseDirectoryHandle = await root.getDirectoryHandle(this.baseDirectory, { create: true });
+    }
   }
 
 }

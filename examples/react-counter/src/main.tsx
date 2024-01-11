@@ -3,7 +3,8 @@ import ReactDOM from "react-dom/client"
 import { App } from "./App.js"
 import { Repo } from "@automerge/automerge-repo"
 import { MessageChannelNetworkAdapter } from "@automerge/automerge-repo-network-messagechannel"
-import { IndexedDBStorageAdapter } from "@automerge/automerge-repo-storage-indexeddb"
+// import { IndexedDBStorageAdapter } from "@automerge/automerge-repo-storage-indexeddb"
+import { OPFSStorageAdapter } from '@openscript-ch/automerge-repo-storage-opfs'
 import { RepoContext } from "@automerge/automerge-repo-react-hooks"
 
 // We run the network & storage in a separate file and the tabs themselves are stateless and lightweight.
@@ -24,7 +25,8 @@ const sharedWorker = new SharedWorker(
 /* Create a repo and share any documents we create with our local in-browser storage worker. */
 const repo = new Repo({
   network: [new MessageChannelNetworkAdapter(sharedWorker.port)],
-  storage: new IndexedDBStorageAdapter("automerge-repo-demo-counter"),
+  //storage: new IndexedDBStorageAdapter("automerge-repo-demo-counter"),
+  storage: new OPFSStorageAdapter("automerge-repo-demo-counter"),
   sharePolicy: async peerId => peerId.includes("shared-worker"),
 })
 
