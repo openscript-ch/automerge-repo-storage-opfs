@@ -1,0 +1,22 @@
+{
+  "name": "automerge-repo-storage-opfs",
+  "version": "0.0.1",
+  "description": "OPFS storage adapter for Automerge Repo",
+  "repository": "https://github.com/openscript-ch/automerge-repo-storage-opfs",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "openscript Ltd. <hi@openscript.ch>",
+  "license": "MIT",
+  "dependencies": {
+    "@automerge/automerge-repo": "^1.0.19",
+    "typescript": "^5.3.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
