@@ -1,0 +1,55 @@
+name: Continuous deployment to package registries
+
+on:
+  push:
+    tags:
+      - v*
+
+jobs:
+  build-and-deploy:
+    name: Build and deploy NPM package
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: '0'
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+
+      - name: Configure node for NPM registry as registry
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+          cache: "pnpm"
+          registry-url: 'https://registry.npmjs.org'
+          scope: '@openscript-ch'
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Create Github release
+        run: pnpm release:create-github-release
+        env:
+          CONVENTIONAL_GITHUB_RELEASER_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+      - run: pnpm publish --access public --no-git-checks
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Configure node for Github registry as registry
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@openscript-ch'
+
+      - name: Authenticate with the GitHub Package Registry
+        run:
+          echo "//npm.pkg.github.com:_authToken=${{ secrets.GITHUB_TOKEN }}" > ~/.npmrc
+
+      - name: Publish package on Github NPM registry
+        run: pnpm publish --no-git-checks
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

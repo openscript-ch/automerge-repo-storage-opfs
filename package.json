@@ -11,13 +11,19 @@
   ],
   "scripts": {
     "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release:major": "standard-version --release-as major && git push --follow-tags",
+    "release:minor": "standard-version --release-as minor && git push --follow-tags",
+    "release:patch": "standard-version --release-as patch && git push --follow-tags",
+    "release:create-github-release": "conventional-github-releaser -p angular"
   },
   "keywords": [],
   "author": "openscript Ltd. <hi@openscript.ch>",
   "license": "MIT",
   "dependencies": {
     "@automerge/automerge-repo": "^1.0.19",
+    "conventional-github-releaser": "^3.1.5",
+    "standard-version": "^9.5.0",
     "typescript": "^5.3.3"
   },
   "publishConfig": {
