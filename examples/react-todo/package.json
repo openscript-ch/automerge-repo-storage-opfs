@@ -1,0 +1,34 @@
+{
+  "name": "@automerge/automerge-repo-demo-todo",
+  "repository": "https://github.com/automerge/automerge-repo/tree/master/examples/react-todo",
+  "private": true,
+  "version": "1.1.0-alpha.7",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --open",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@automerge/automerge": "^2.1.9",
+    "@automerge/automerge-repo": "^1.0.19",
+    "@automerge/automerge-repo-network-broadcastchannel": "^1.0.19",
+    "@automerge/automerge-repo-network-messagechannel": "^1.0.19",
+    "@automerge/automerge-repo-network-websocket": "^1.0.19",
+    "@automerge/automerge-repo-react-hooks": "^1.0.19",
+    "@automerge/automerge-repo-storage-indexeddb": "^1.0.19",
+    "@automerge/automerge-wasm": "^0.9.0",
+    "@ibm/plex": "^6.1.1",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.13",
+    "classnames": "^2.3.2",
+    "postcss": "^8.4.21",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "vite": "^5.0.11",
+    "vite-plugin-top-level-await": "^1.4.1",
+    "vite-plugin-wasm": "^3.3.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}

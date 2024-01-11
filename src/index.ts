@@ -1,6 +1,8 @@
 import { Chunk, StorageAdapter, StorageKey } from '@automerge/automerge-repo';
 
 export class OPFSStorageAdapter extends StorageAdapter {
+  private baseDirectory: string
+
   load(key: StorageKey): Promise<Uint8Array | undefined> {
     throw new Error('Method not implemented.');
   }
