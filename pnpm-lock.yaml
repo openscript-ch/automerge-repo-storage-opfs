@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@automerge/automerge-repo':
         specifier: ^1.0.19
-        version: 1.0.19(@types/node@20.11.0)(typescript@5.3.3)
+        version: 1.1.4(@types/node@20.11.30)(typescript@5.4.3)
       conventional-github-releaser:
         specifier: ^3.1.5
         version: 3.1.5
@@ -19,7 +19,7 @@ importers:
         version: 9.5.0
       typescript:
         specifier: ^5.3.3
-        version: 5.3.3
+        version: 5.4.3
 
   examples/react-counter:
     dependencies:
@@ -28,19 +28,19 @@ importers:
         version: 2.1.10
       '@automerge/automerge-repo':
         specifier: ^1.0.19
-        version: 1.0.19(@types/node@20.11.0)(typescript@5.3.3)
+        version: 1.1.4(@types/node@20.11.30)(typescript@5.4.3)
       '@automerge/automerge-repo-network-messagechannel':
         specifier: ^1.0.19
-        version: 1.0.19(@types/node@20.11.0)(typescript@5.3.3)
+        version: 1.0.19(@types/node@20.11.30)(typescript@5.4.3)
       '@automerge/automerge-repo-network-websocket':
         specifier: ^1.0.19
-        version: 1.0.19(@types/node@20.11.0)(typescript@5.3.3)
+        version: 1.0.19(@types/node@20.11.30)(typescript@5.4.3)
       '@automerge/automerge-repo-react-hooks':
         specifier: ^1.0.19
-        version: 1.0.19(@types/node@20.11.0)(typescript@5.3.3)
+        version: 1.0.19(@types/node@20.11.30)(typescript@5.4.3)
       '@automerge/automerge-repo-storage-indexeddb':
         specifier: ^1.0.19
-        version: 1.0.19(@types/node@20.11.0)(typescript@5.3.3)
+        version: 1.0.19(@types/node@20.11.30)(typescript@5.4.3)
       '@automerge/automerge-wasm':
         specifier: ^0.9.0
         version: 0.9.0
@@ -61,7 +61,7 @@ importers:
         version: 18.2.0(react@18.2.0)
       vite:
         specifier: ^5.0.11
-        version: 5.0.11(@types/node@20.11.0)
+        version: 5.0.11(@types/node@20.11.30)
       vite-plugin-wasm:
         specifier: ^3.3.0
         version: 3.3.0(vite@5.0.11)
@@ -73,22 +73,22 @@ importers:
         version: 2.1.10
       '@automerge/automerge-repo':
         specifier: ^1.0.19
-        version: 1.0.19(@types/node@20.11.0)(typescript@5.3.3)
+        version: 1.1.4(@types/node@20.11.30)(typescript@5.4.3)
       '@automerge/automerge-repo-network-broadcastchannel':
         specifier: ^1.0.19
-        version: 1.0.19(@types/node@20.11.0)(typescript@5.3.3)
+        version: 1.0.19(@types/node@20.11.30)(typescript@5.4.3)
       '@automerge/automerge-repo-network-messagechannel':
         specifier: ^1.0.19
-        version: 1.0.19(@types/node@20.11.0)(typescript@5.3.3)
+        version: 1.0.19(@types/node@20.11.30)(typescript@5.4.3)
       '@automerge/automerge-repo-network-websocket':
         specifier: ^1.0.19
-        version: 1.0.19(@types/node@20.11.0)(typescript@5.3.3)
+        version: 1.0.19(@types/node@20.11.30)(typescript@5.4.3)
       '@automerge/automerge-repo-react-hooks':
         specifier: ^1.0.19
-        version: 1.0.19(@types/node@20.11.0)(typescript@5.3.3)
+        version: 1.0.19(@types/node@20.11.30)(typescript@5.4.3)
       '@automerge/automerge-repo-storage-indexeddb':
         specifier: ^1.0.19
-        version: 1.0.19(@types/node@20.11.0)(typescript@5.3.3)
+        version: 1.0.19(@types/node@20.11.30)(typescript@5.4.3)
       '@automerge/automerge-wasm':
         specifier: ^0.9.0
         version: 0.9.0
@@ -115,7 +115,7 @@ importers:
         version: 18.2.0(react@18.2.0)
       vite:
         specifier: ^5.0.11
-        version: 5.0.11(@types/node@20.11.0)
+        version: 5.0.11(@types/node@20.11.30)
       vite-plugin-top-level-await:
         specifier: ^1.4.1
         version: 1.4.1(vite@5.0.11)
@@ -139,13 +139,13 @@ packages:
     engines: {node: '>=6.0.0'}
     dependencies:
       '@jridgewell/gen-mapping': 0.3.3
-      '@jridgewell/trace-mapping': 0.3.9
+      '@jridgewell/trace-mapping': 0.3.25
     dev: false
 
-  /@automerge/automerge-repo-network-broadcastchannel@1.0.19(@types/node@20.11.0)(typescript@5.3.3):
+  /@automerge/automerge-repo-network-broadcastchannel@1.0.19(@types/node@20.11.30)(typescript@5.4.3):
     resolution: {integrity: sha512-Qb5+i+huCnOuriyVwuusHUXzUWdgOqslhSa/wAQEvJ+nOPkwhDDhDTgdvjnQjK5/grJCQzcmlwh+oQ55/3IPcg==}
     dependencies:
-      '@automerge/automerge-repo': 1.0.19(@types/node@20.11.0)(typescript@5.3.3)
+      '@automerge/automerge-repo': 1.1.4(@types/node@20.11.30)(typescript@5.4.3)
     transitivePeerDependencies:
       - '@swc/core'
       - '@swc/wasm'
@@ -154,10 +154,10 @@ packages:
       - typescript
     dev: false
 
-  /@automerge/automerge-repo-network-messagechannel@1.0.19(@types/node@20.11.0)(typescript@5.3.3):
+  /@automerge/automerge-repo-network-messagechannel@1.0.19(@types/node@20.11.30)(typescript@5.4.3):
     resolution: {integrity: sha512-QyCF3oydmTC6fNH0PyaqWQR5r1YKGlswT0r9/TvxHhvDhmPutxtEe3gNeGlr3Qtfe/24q6NOs6JlZ37/D6QjXQ==}
     dependencies:
-      '@automerge/automerge-repo': 1.0.19(@types/node@20.11.0)(typescript@5.3.3)
+      '@automerge/automerge-repo': 1.1.4(@types/node@20.11.30)(typescript@5.4.3)
     transitivePeerDependencies:
       - '@swc/core'
       - '@swc/wasm'
@@ -166,10 +166,10 @@ packages:
       - typescript
     dev: false
 
-  /@automerge/automerge-repo-network-websocket@1.0.19(@types/node@20.11.0)(typescript@5.3.3):
+  /@automerge/automerge-repo-network-websocket@1.0.19(@types/node@20.11.30)(typescript@5.4.3):
     resolution: {integrity: sha512-he/cRcZ9byNHZN0ws/c7rwjT6ocbAdPr2EGvTUp6QeIhRlcICqyTuIJjUSG0MyxckO8FbqcBKnfsiaTRCx/b3Q==}
     dependencies:
-      '@automerge/automerge-repo': 1.0.19(@types/node@20.11.0)(typescript@5.3.3)
+      '@automerge/automerge-repo': 1.1.4(@types/node@20.11.30)(typescript@5.4.3)
       cbor-x: 1.5.7
       eventemitter3: 5.0.1
       isomorphic-ws: 5.0.0(ws@8.16.0)
@@ -184,11 +184,11 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@automerge/automerge-repo-react-hooks@1.0.19(@types/node@20.11.0)(typescript@5.3.3):
+  /@automerge/automerge-repo-react-hooks@1.0.19(@types/node@20.11.30)(typescript@5.4.3):
     resolution: {integrity: sha512-bEy7YvIHOwrBPl+4HPmhLedUJ7e1LF+pXLjqexykcNU+1oCEk/JEc98rx9GxQKt4TFCEhouGErDMFwJD8NpVTw==}
     dependencies:
       '@automerge/automerge': 2.1.10
-      '@automerge/automerge-repo': 1.0.19(@types/node@20.11.0)(typescript@5.3.3)
+      '@automerge/automerge-repo': 1.1.4(@types/node@20.11.30)(typescript@5.4.3)
       eventemitter3: 5.0.1
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -201,10 +201,10 @@ packages:
       - typescript
     dev: false
 
-  /@automerge/automerge-repo-storage-indexeddb@1.0.19(@types/node@20.11.0)(typescript@5.3.3):
+  /@automerge/automerge-repo-storage-indexeddb@1.0.19(@types/node@20.11.30)(typescript@5.4.3):
     resolution: {integrity: sha512-mp2P37tVtd2CIYMOfuYQd6iiXYSSw0ooJnuugDhR53KC1Q1gIFUiNBF/m3XE/Gp+ZOZm03HHPIfHjqxqk9mSag==}
     dependencies:
-      '@automerge/automerge-repo': 1.0.19(@types/node@20.11.0)(typescript@5.3.3)
+      '@automerge/automerge-repo': 1.1.4(@types/node@20.11.30)(typescript@5.4.3)
     transitivePeerDependencies:
       - '@swc/core'
       - '@swc/wasm'
@@ -213,17 +213,17 @@ packages:
       - typescript
     dev: false
 
-  /@automerge/automerge-repo@1.0.19(@types/node@20.11.0)(typescript@5.3.3):
-    resolution: {integrity: sha512-IcfX9xkbk+YY7IhG+ZCoUVccou2MmHGXvu/XGOICFmUIaG1mkQAPzZU2u5r2JUX0cpr/2PcIPOeCletJMssnWw==}
+  /@automerge/automerge-repo@1.1.4(@types/node@20.11.30)(typescript@5.4.3):
+    resolution: {integrity: sha512-EuY/+hwPkR0bLkMzi2obRFzW3fsUtlih7S0Te/nJRvsXS7a5mrzmqnQpFwYZPZzeBsPrxaBC2vVrcNqferlaLQ==}
     dependencies:
       '@automerge/automerge': 2.1.10
       bs58check: 3.0.1
-      cbor-x: 1.5.7
+      cbor-x: 1.5.9
       debug: 4.3.4
       eventemitter3: 5.0.1
       fast-sha256: 1.3.0
       tiny-typed-emitter: 2.1.0
-      ts-node: 10.9.2(@types/node@20.11.0)(typescript@5.3.3)
+      ts-node: 10.9.2(@types/node@20.11.30)(typescript@5.4.3)
       uuid: 9.0.1
       xstate: 4.38.3
     transitivePeerDependencies:
@@ -287,7 +287,7 @@ packages:
     dependencies:
       '@babel/types': 7.23.6
       '@jridgewell/gen-mapping': 0.3.3
-      '@jridgewell/trace-mapping': 0.3.20
+      '@jridgewell/trace-mapping': 0.3.25
       jsesc: 2.5.2
     dev: false
 
@@ -750,10 +750,10 @@ packages:
     dependencies:
       '@jridgewell/set-array': 1.1.2
       '@jridgewell/sourcemap-codec': 1.4.15
-      '@jridgewell/trace-mapping': 0.3.9
+      '@jridgewell/trace-mapping': 0.3.25
 
-  /@jridgewell/resolve-uri@3.1.1:
-    resolution: {integrity: sha512-dSYZh7HhCDtCKm4QakX0xFpsRDqjjtZf/kjI/v3T3Nwt5r8/qz/M19F9ySyOqU94SXBmeG9ttTul+YnR4LOxFA==}
+  /@jridgewell/resolve-uri@3.1.2:
+    resolution: {integrity: sha512-bRISgCIjP20/tbWSPWMEi54QVPRZExkuD9lJL+UIxUKtwVJA8wW1Trb1jMs1RFXo1CBTNZ/5hpC9QvmKWdopKw==}
     engines: {node: '>=6.0.0'}
 
   /@jridgewell/set-array@1.1.2:
@@ -763,21 +763,21 @@ packages:
   /@jridgewell/sourcemap-codec@1.4.15:
     resolution: {integrity: sha512-eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg==}
 
-  /@jridgewell/trace-mapping@0.3.20:
-    resolution: {integrity: sha512-R8LcPeWZol2zR8mmH3JeKQ6QRCFb7XgUhV9ZlGhHLGyg4wpPiPZNQOOWhFZhxKw8u//yTbNGI42Bx/3paXEQ+Q==}
+  /@jridgewell/trace-mapping@0.3.25:
+    resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
     dependencies:
-      '@jridgewell/resolve-uri': 3.1.1
+      '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.4.15
-    dev: false
 
   /@jridgewell/trace-mapping@0.3.9:
     resolution: {integrity: sha512-3Belt6tdc8bPgAtbcmdtNJlirVoTmEb5e2gC94PnkwEW9jI6CAHUeoG85tjWP5WquqfavoMtMwiG4P926ZKKuQ==}
     dependencies:
-      '@jridgewell/resolve-uri': 3.1.1
+      '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.4.15
+    dev: false
 
-  /@noble/hashes@1.3.3:
-    resolution: {integrity: sha512-V7/fPHgl+jsVPXqqeOzT8egNj2iBIVt+ECeMMG8TdcnTikP3oaBtUVqpT/gYCR68aEBJSF+XbYUxStjbFMqIIA==}
+  /@noble/hashes@1.4.0:
+    resolution: {integrity: sha512-V1JJ1WTRUqHHrOSh597hURcMqVKVGL/ea3kv0gSnEdsEZ0/+VyPghM1lMNGc00z7CIQorSvbKpuJkxvuHbvdbg==}
     engines: {node: '>= 16'}
     dev: false
 
@@ -1051,8 +1051,8 @@ packages:
     resolution: {integrity: sha512-myfUej5naTBWnqOCc/MdVOLVjXUXtIA+NpDrDBKJtLLg2shUjBu3cZmB/85RyitKc55+lUUyl7oRfLOvkr2hsw==}
     dev: false
 
-  /@tsconfig/node10@1.0.9:
-    resolution: {integrity: sha512-jNsYVVxU8v5g43Erja32laIDHXeoNvFEpX33OK4d6hljo3jDhCBDhx5dhCCTMWUojscpAagGiRkBKxpdl9fxqA==}
+  /@tsconfig/node10@1.0.10:
+    resolution: {integrity: sha512-PiaIWIoPvO6qm6t114ropMCagj6YAF24j9OkCA2mJDXFnlionEwhsBCJ8yek4aib575BI3OkART/90WsgHgLWw==}
     dev: false
 
   /@tsconfig/node12@1.0.11:
@@ -1116,6 +1116,12 @@ packages:
       undici-types: 5.26.5
     dev: false
 
+  /@types/node@20.11.30:
+    resolution: {integrity: sha512-dHM6ZxwlmuZaRmUPfv1p+KrdD1Dci04FbdEm/9wEMouFqxYoFl5aMkt0VMAUtYRQDyYvD41WJLukhq/ha3YuTw==}
+    dependencies:
+      undici-types: 5.26.5
+    dev: false
+
   /@types/normalize-package-data@2.4.4:
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
     dev: false
@@ -1153,7 +1159,7 @@ packages:
       '@babel/plugin-transform-react-jsx-source': 7.23.3(@babel/core@7.23.7)
       '@types/babel__core': 7.20.5
       react-refresh: 0.14.0
-      vite: 5.0.11(@types/node@20.11.0)
+      vite: 5.0.11(@types/node@20.11.30)
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -1166,8 +1172,8 @@ packages:
       through: 2.3.8
     dev: false
 
-  /acorn-walk@8.3.1:
-    resolution: {integrity: sha512-TgUZgYvqZprrl7YldZNoa9OciCAyZR+Ejm9eXzKCmjsF5IKp/wgQ7Z/ZpjpGTIUPwrHQIcYeI8qDh4PsEwxMbw==}
+  /acorn-walk@8.3.2:
+    resolution: {integrity: sha512-cjkyv4OtNCIeqhHrfS81QWXoCBPExR/J62oyEqepVw8WaQeSqpW2uhuLPh1m9eWhDuOo/jUXVTlifvesOWp/4A==}
     engines: {node: '>=0.4.0'}
     dev: false
 
@@ -1310,7 +1316,7 @@ packages:
   /bs58check@3.0.1:
     resolution: {integrity: sha512-hjuuJvoWEybo7Hn/0xOrczQKKEKD63WguEjlhLExYs2wUBcebDC1jDNK17eEAD2lYfw82d5ASC1d7K3SWszjaQ==}
     dependencies:
-      '@noble/hashes': 1.3.3
+      '@noble/hashes': 1.4.0
       bs58: 5.0.0
     dev: false
 
@@ -1398,6 +1404,12 @@ packages:
 
   /cbor-x@1.5.7:
     resolution: {integrity: sha512-i6JEJLOXTK++wCpBI1EZUCE5tXxkA1N7Y0NZbPJ0XBcz0vRQlWESOhxb6EDST7SgP2uUf81UnB2Qv3VcxKvjoA==}
+    optionalDependencies:
+      cbor-extract: 2.2.0
+    dev: false
+
+  /cbor-x@1.5.9:
+    resolution: {integrity: sha512-OEI5rEu3MeR0WWNUXuIGkxmbXVhABP+VtgAXzm48c9ulkrsvxshjjk94XSOGphyAKeNGLPfAxxzEtgQ6rEVpYQ==}
     optionalDependencies:
       cbor-extract: 2.2.0
     dev: false
@@ -1816,7 +1828,7 @@ packages:
       supports-color:
         optional: true
     dependencies:
-      ms: 2.1.2
+      ms: 2.1.3
     dev: false
 
   /debug@4.3.4:
@@ -2787,6 +2799,10 @@ packages:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
     dev: false
 
+  /ms@2.1.3:
+    resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
+    dev: false
+
   /mz@2.7.0:
     resolution: {integrity: sha512-z81GNO7nnYMEhrGh9LeymoE4+Yr0Wn5McHIZMK5cfQCl+NDX08sCZgUc9/6MHni9IWuFLm1Z3HTCXu2z9fN62Q==}
     dependencies:
@@ -3725,7 +3741,7 @@ packages:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
     dev: true
 
-  /ts-node@10.9.2(@types/node@20.11.0)(typescript@5.3.3):
+  /ts-node@10.9.2(@types/node@20.11.30)(typescript@5.4.3):
     resolution: {integrity: sha512-f0FFpIdcHgn8zcPSbf1dRevwt047YMnaiJM3u2w2RewrB+fob/zePZcrOyQoLMMO7aBIddLcQIEK5dYjkLnGrQ==}
     hasBin: true
     peerDependencies:
@@ -3740,18 +3756,18 @@ packages:
         optional: true
     dependencies:
       '@cspotcode/source-map-support': 0.8.1
-      '@tsconfig/node10': 1.0.9
+      '@tsconfig/node10': 1.0.10
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.4
-      '@types/node': 20.11.0
+      '@types/node': 20.11.30
       acorn: 8.11.3
-      acorn-walk: 8.3.1
+      acorn-walk: 8.3.2
       arg: 4.1.3
       create-require: 1.1.1
       diff: 4.0.2
       make-error: 1.3.6
-      typescript: 5.3.3
+      typescript: 5.4.3
       v8-compile-cache-lib: 3.0.1
       yn: 3.1.1
     dev: false
@@ -3780,8 +3796,8 @@ packages:
     resolution: {integrity: sha512-/aCDEGatGvZ2BIk+HmLf4ifCJFwvKFNb9/JeZPMulfgFracn9QFcAf5GO8B/mweUjSoblS5In0cWhqpfs/5PQA==}
     dev: false
 
-  /typescript@5.3.3:
-    resolution: {integrity: sha512-pXWcraxM0uxAS+tN0AG/BF2TyqmHO014Z070UsJ+pFvYuRSq8KH8DmWpnbXe0pEPDHXZV3FcAbJkijJ5oNEnWw==}
+  /typescript@5.4.3:
+    resolution: {integrity: sha512-KrPd3PKaCLr78MalgiwJnA25Nm8HAmdwN3mYUYZgG/wizIo9EainNVQI9/yDavtVFRN2h3k8uf3GLHuhDMgEHg==}
     engines: {node: '>=14.17'}
     hasBin: true
     dev: false
@@ -3848,7 +3864,7 @@ packages:
       '@rollup/plugin-virtual': 3.0.2
       '@swc/core': 1.3.102
       uuid: 9.0.1
-      vite: 5.0.11(@types/node@20.11.0)
+      vite: 5.0.11(@types/node@20.11.30)
     transitivePeerDependencies:
       - '@swc/helpers'
       - rollup
@@ -3859,10 +3875,10 @@ packages:
     peerDependencies:
       vite: ^2 || ^3 || ^4 || ^5
     dependencies:
-      vite: 5.0.11(@types/node@20.11.0)
+      vite: 5.0.11(@types/node@20.11.30)
     dev: false
 
-  /vite@5.0.11(@types/node@20.11.0):
+  /vite@5.0.11(@types/node@20.11.30):
     resolution: {integrity: sha512-XBMnDjZcNAw/G1gEiskiM1v6yzM4GE5aMGvhWTlHAYYhxb7S3/V1s3m2LDHa8Vh6yIWYYB0iJwsEaS523c4oYA==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -3890,7 +3906,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 20.11.0
+      '@types/node': 20.11.30
       esbuild: 0.19.11
       postcss: 8.4.33
       rollup: 4.9.4
